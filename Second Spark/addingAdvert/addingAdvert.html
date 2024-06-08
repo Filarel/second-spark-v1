@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Spark</title>
+  <link rel="icon" href="https://i.ibb.co/cCWN2Jy/second-spark-only-logo.png" type="image/x-icon">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="adding.css">
+
+  <script src="adding.js" defer type="module"></script> 
+
+</head>
+<body>
+  <div class="header-bar">
+    <a href="/mainPage/main.html">
+      <img src="https://i.ibb.co/ZMmwNyx/second-spark-v2-1.png" alt="Logo" class="header-logo">  
+    </a>
+    <div class="spacer"></div>
+    <!-- <button class="adding-ad">
+      Post an ad
+      <i class="fa-regular fa-plus"></i>
+    </button> -->
+    <a href="/loggingPage/loging.html" class="account-link">
+      <button class="account-btn">
+        <i class="fa-regular fa-user"></i>
+      </button>
+    </a>
+  </div>
+  
+  <h1 class="message">Add an item</h1>
+
+  <div class="adding-content">
+    <div class="data">
+      <input type="text" class="ad-title" placeholder="Ad title"/>
+      <!-- <input type="text" class="ad-category" placeholder="Category"/> -->
+      <select class="ad-category" required>
+        <option value="" disabled selected hidden>Category</option>
+        <option value="CPU">CPU</option>
+        <option value="GPU">GPU</option>
+        <option value="RAM">RAM</option>
+        <option value="Disks">Disks</option>
+        <option value="MOBO">MOBO</option>
+        <option value="PSU">PSU</option>
+        <option value="Coolers">Coolers</option>
+        <option value="Cases">Cases</option>
+      </select>
+      <textarea name="text1" class="ad-description" placeholder="Description"></textarea>
+      <input type="text" class="ad-phone" placeholder="Phone number"/> 
+      <input type="text" class="ad-price" placeholder="Price"/> 
+      <div class="buttons">
+        <button class="go-back" onclick=history.back()><i class="fa-solid fa-arrow-left"></i></i> Go back to the store</button>
+        <button class="post-the-item">Post the item</button>
+      </div>
+    </div>
+    <div class="picture">
+      
+      <!-- <div class="temporarily">
+        <h3 class="img-message">Due to the limited time of making this project, adding picture is based on entering direct URL to the img. We recommend using <a href="https://imgbb.com/">https://imgbb.com/</a> for uploading your picture. Sorry for the inconvinence!</h3>
+        <input type="text" class="ad-picture" placeholder="Direct URL"/> 
+      </div> -->
+      <label for="imageInput" class="img">
+        <i class="fa-regular fa-image"></i>
+        <i class="fa-regular fa-plus"></i>
+      </label>
+      <input type="file" id="imageInput" accept="image/*" />
+
+      
+    </div>
+  </div>
+
+  <div class="not-logged-msg">
+    <h1 class="must-login">You must log in before adding an item!</h1>
+    <h2 class="redirecting"></h2>
+  </div>
+
+</body>
+</html>

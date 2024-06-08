@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Spark</title>
+  <link rel="icon" href="https://i.ibb.co/cCWN2Jy/second-spark-only-logo.png" type="image/x-icon">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="main.css">
+
+  <script src="main.js" defer type="module"></script> 
+
+</head>
+<body>
+  <div class="header-bar">
+    <a href="/mainPage/main.html">
+      <img src="https://i.ibb.co/ZMmwNyx/second-spark-v2-1.png" alt="Logo" class="header-logo">  
+    </a>
+    <div class="spacer"></div>
+    <a href="/addingAdvert/addingAdvert.html">
+      <button class="adding-ad">
+        Sell an item
+        <i class="fa-regular fa-plus"></i>
+      </button>
+    </a>
+    <a href="/loggingPage/loging.html" class="account-link">
+      <button class="account-btn">
+        <i class="fa-regular fa-user"></i>
+      </button>
+    </a>
+  </div>
+  
+
+  <div class="search-container">
+    <h1 class="message">Looking for an used item? Type here!</h1>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <div class="filters">
+        <div class="dropdown">
+          <button class="filter-ad">
+            <div class="filter-text">Filters</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="filters-container">
+            <div class="dropdown-row">
+              <h4 class="dropdown-row-title">Price</h4>
+            </div>
+            <div class="dropdown-row price-content">
+              <input type="number" id="minPrice" placeholder="Min" min="0"/>
+              <input type="number" id="maxPrice" placeholder="Max" min="0"/>
+            </div>
+            <div class="dropdown-row">
+              <h4 class="dropdown-row-title">Category</h4>
+            </div>
+            <div class="dropdown-row category-content">
+              <select name="category-selector" class="category-selector">
+                <option value="Any" selected>Any</option>
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+                <option value="RAM">RAM</option>
+                <option value="Disks">Disks</option>
+                <option value="MOBO">MOBO</option>
+                <option value="PSU">PSU</option>
+                <option value="Coolers">Coolers</option>
+                <option value="Cases">Cases</option>
+              </select>
+            </div>
+          </div>
+          
+        </div>  
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="message added">Recently uploaded:</h2>
+
+  <div class="ads">
+    <div class="ad-container"></div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-grid">
+      <div class="about footer-column">
+        <h3 class="footer-title">About this project</h3>
+        <p class="footer-row">This project was made in vanilla JavaScirpt. All the data of this app is stored in browsers local storage, In second version of this project I plan to use React framework as well as some kind of database f.e. Firebase (NO SQL) or Turso (SQL).</p>
+      </div>
+      <div class="categories footer-column">
+        <h5 class="footer-title">Categories</h5>
+        <h4 class="footer-row">CPU</h4>
+        <h4 class="footer-row">GPU</h4>
+        <h4 class="footer-row">RAM</h4>
+        <h4 class="footer-row">Disks</h4>
+        <h4 class="footer-row">MOBO</h4>
+        <h4 class="footer-row">PSU</h4>
+        <h4 class="footer-row">Coolers</h4>
+        <h4 class="footer-row">Cases</h4>
+      </div>
+      <div class="contact footer-column">
+        <h3 class="footer-title">Contact</h3>
+        <h4 class="footer-row">contact@secondspark.com</h4>
+        <h4 class="footer-row">+48 798 654 321</h4>
+        <h4 class="footer-row">Katowice</h4>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-bottom">
+      <h4 class="page-name">2023 Second Spark</h4>
+      <div class="spacer"></div>
+      <h4 class="created-by">Created by Wiktor Plewiński</h4>
+    </div>
+  </div> 
+
+  <div class="unblock-message"><h1 class="unblock-message-h1">Hi! I see this is your first time here.</h1><h1>Please <span class="bolded">disable adblock</span> if you have it as it causes the page to display incorrectly. 
+    <br><br>Please refresh the page.</h1></div>
+
+</body>
+</html>

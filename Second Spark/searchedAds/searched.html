@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Spark</title>
+  <link rel="icon" href="https://i.ibb.co/cCWN2Jy/second-spark-only-logo.png" type="image/x-icon">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="searched.css">
+
+  <script src="searched.js" defer type="module"></script> 
+
+
+
+</head>
+<body>
+  <div class="header-bar">
+    <a href="/mainPage/main.html">
+      <img src="https://i.ibb.co/ZMmwNyx/second-spark-v2-1.png" alt="Logo" class="header-logo">  
+    </a>
+    <div class="spacer"></div>
+    <a href="/addingAdvert/addingAdvert.html">
+      <button class="adding-ad">
+        Sell an item
+        <i class="fa-regular fa-plus"></i>
+      </button>
+    </a>
+    <a href="/loggingPage/loging.html" class="account-link">
+      <button class="account-btn">
+        <i class="fa-regular fa-user"></i>
+      </button>
+    </a>
+  </div>
+  
+
+  <div class="search-container">
+    <h1 class="message">Looking for an used item? Type here!</h1>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <!-- <div class="filters"> -->
+        <!-- <div class="dropdown">
+          <button class="filter-ad">
+            <div class="filter-text">Filters</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="filters-container">
+            <div class="dropdown-row">
+              <input type="checkbox" name="price-checkbox" id="price-checkbox">
+              <label for="price-checkbox">Price</label>
+            </div>
+            <div class="dropdown-row price-content">
+              <input type="number" id="minPrice" placeholder="Min" />
+              <input type="number" id="maxPrice" placeholder="Max" />
+            </div>
+            <div class="dropdown-row">
+              <input type="checkbox" name="category-che ckbox" id="category-checkbox">
+              <label for="category-checkbox">Category</label>
+            </div>
+            <div class="dropdown-row category-content">
+              <select name="category-selector" class="category-selector">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+                <option value="RAM">RAM</option>
+                <option value="Disks">Disks</option>
+                <option value="MOBO">MOBO</option>
+                <option value="PSU">PSU</option>
+                <option value="Coolers">Coolers</option>
+                <option value="Cases">Cases</option>
+              </select>
+            </div>
+          </div>
+          
+        </div>   -->
+
+
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="searchOptions">
+    <div class="filters">
+
+      <div class="category-content">
+        <h3 class="filters-title">Filters</h3>
+        <h4 class="container-title">Category</h4>
+        <select name="category-selector" class="category-selector">
+          <option value="Any" selected>Any</option>
+          <option value="CPU">CPU</option>
+          <option value="GPU">GPU</option>
+          <option value="RAM">RAM</option>
+          <option value="Disks">Disks</option>
+          <option value="MOBO">MOBO</option>
+          <option value="PSU">PSU</option>
+          <option value="Coolers">Coolers</option>
+          <option value="Cases">Cases</option>
+        </select>
+      </div>
+
+      <div class="price-container">
+        <h4 class="container-title">Price</h4>
+        <div class="price-content">
+          <input type="number" id="minPrice" placeholder="Min" min="0" pattern="\d*" inputmode="numeric"/>
+          <input type="number" id="maxPrice" placeholder="Max" min="0" pattern="\d*" inputmode="numeric"/>
+          <!-- <input autocomplete="off" type="tel" inputmode="numeric" pattern="\d*" data-testid="range-to-input" placeholder="Do" class="css-ygy1px" name="range-to-input" color="#002F34" aria-invalid="false" font-size="16px" aria-labelledby="range-to-input-label" value=""> -->
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sorting">
+
+      <div class="sorting-content">
+        <h3 class="filters-title">Sorting</h3>
+        <h4 class="container-title opacity">Sort</h4>
+        <select name="sort-selector" class="sort-selector">
+          <option value="Newest" selected>Newest</option>
+          <option value="Oldest">Oldest</option>
+          <option value="Highest price">Highest price</option>
+          <option value="Lowest price">Lowest price</option>
+        </select>
+      </div>
+
+    </div>
+  </div>
+  
+<div class="searched-ads">
+  <div class="ad-container">
+<!--      <div class="ad">
+       <img src="https://i.ibb.co/xHjgTw3/RAM-DDR4-3200-PC4-16-GB-2x8-GB.webp" alt="Advertisement Image">
+       <h2 class="ad-price">$110</h2>
+       <h4 class="ad-title">RAM DDR4 3200 PC4 16GB (2x8GB)</h4>
+       <div class="ad-category-container">
+         <div class="ad-category">RAM</div>
+         <div class="spacer"></div>
+         <div class="addedAgo">Uploaded: <span class="date">23.06.2023</span></div>
+       </div>
+       <ad-id>0</ad-id>
+        <button class="ad-btn">See more</button> 
+     </div> -->
+    
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-grid">
+    <div class="about footer-column">
+      <h3 class="footer-title">About this project</h3>
+      <p class="footer-row">This project was made in vanilla JavaScirpt. All the data of this app is stored in browsers local storage, In second version of this project I plan to use React framework as well as some kind of database f.e. Firebase (NO SQL) or Turso (SQL).</p>
+    </div>
+    <div class="categories footer-column">
+      <h5 class="footer-title">Categories</h5>
+      <h4 class="footer-row">CPU</h4>
+      <h4 class="footer-row">GPU</h4>
+      <h4 class="footer-row">RAM</h4>
+      <h4 class="footer-row">Disks</h4>
+      <h4 class="footer-row">MOBO</h4>
+      <h4 class="footer-row">PSU</h4>
+      <h4 class="footer-row">Coolers</h4>
+      <h4 class="footer-row">Cases</h4>
+    </div>
+    <div class="contact footer-column">
+      <h3 class="footer-title">Contact</h3>
+      <h4 class="footer-row">contact@secondspark.com</h4>
+      <h4 class="footer-row">+48 798 654 321</h4>
+      <h4 class="footer-row">Katowice</h4>
+    </div>
+  </div>
+  <div class="footer-line"></div>
+  <div class="footer-bottom">
+    <h4 class="page-name">2023 Second Spark</h4>
+    <div class="spacer"></div>
+    <h4 class="created-by">Created by Wiktor Plewiński</h4>
+  </div>
+</div> 
+
+</body>
+</html>
